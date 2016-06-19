@@ -77,11 +77,36 @@
 					// hide form
 					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
 
+					var domainname = $('#q1').val();
+					var fullname = $('#q2').val();
+					var emailid = $('#q3').val();
+
+					var formData = {domainname:domainname,fullname:fullname,emailid:emailid}; 
+					//console.log(formData);
 					/*
 					form.submit()
 					or
 					AJAX request (maybe show loading indicator while we don't have an answer..)
 					*/
+					$.ajax({
+					    url: 'sendmail.php',
+					    type: 'POST',
+					    data : formData,
+					    async: false,
+					    cache: false,
+					    timeout: 30000,
+					    error: function(){
+					        return true;
+					    },
+					    success: function(msg){ 
+					        if (parseFloat(msg)){
+					            return false;
+					        } else {
+					            return true;
+					        }
+					    }
+					});
+
 
 					// let's just simulate something...
 					var messageEl = theForm.querySelector( '.final-message' );
