@@ -22,7 +22,7 @@ $mail->WordWrap = 50;                                 // Set word wrap to 50 cha
 $mail->isHTML(true);                                  // Set email format to HTML
  
 $mail->Subject = 'Welcome to fresh eye';
-$mail->Body    = 'Hii'.$_POST['fullname'].", <br/>Thank you for subscribing to FreshEye.<br/>someone from our team would get back to you soon";
+$mail->Body    = 'Hii '.$_POST['fullname'].", <br/>Thank you for subscribing to FreshEye.<br/>someone from our team would get back to you soon";
 $mail->AltBody = 'Hii'.$_POST['fullname'].", <br/>Thank you for subscribing to FreshEye.<br/>someone from our team would get back to you soon";
  
 //Read an HTML message body from an external file, convert referenced images to embedded,

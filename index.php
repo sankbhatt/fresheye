@@ -89,7 +89,7 @@
 					AJAX request (maybe show loading indicator while we don't have an answer..)
 					*/
 					$.ajax({
-					    url: 'http://www.fresheye.in/sendmail.php',
+					    url: 'http://fresheye.in/',
 					    type: 'POST',
 					    data : formData,
 					    async: false,
