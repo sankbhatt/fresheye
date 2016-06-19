@@ -82,14 +82,14 @@
 					var emailid = $('#q3').val();
 
 					var formData = {domainname:domainname,fullname:fullname,emailid:emailid}; 
-					//console.log(formData);
+					console.log(formData);
 					/*
 					form.submit()
 					or
 					AJAX request (maybe show loading indicator while we don't have an answer..)
 					*/
 					$.ajax({
-					    url: 'sendmail.php',
+					    url: 'http://www.fresheye.in/sendmail.php',
 					    type: 'POST',
 					    data : formData,
 					    async: false,
@@ -99,11 +99,8 @@
 					        return true;
 					    },
 					    success: function(msg){ 
-					        if (parseFloat(msg)){
-					            return false;
-					        } else {
-					            return true;
-					        }
+					    	console.log("success");
+					        console.log(msg);
 					    }
 					});
 
