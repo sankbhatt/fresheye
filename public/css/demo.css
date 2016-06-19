@@ -1,0 +1,265 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body{
+	background: #EA7192;
+	color: #fff;
+	font-family: Lato;
+}
+
+.form{
+
+}
+
+::-webkit-input-placeholder {
+   color: rgb(247, 122, 156);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgb(247, 122, 156);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgb(247, 122, 156);  
+}
+
+:-ms-input-placeholder {  
+   color: rgb(247, 122, 156);  
+}
+
+.man {
+  display: block;
+  width: 488px;
+  height: 212px;
+  position: relative;
+  margin: auto;
+  background-repeat: no-repeat;
+  /*background-position: center center;*/
+  background-position: 65px 20px;
+  /* BACKGROUND IMAGE ULR IN BOTTOM OF CSS (BASE64) */
+}
+.man #left-eye,
+.man #right-eye {
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 24px;
+  top: 158px;
+}
+.man #left-eye {
+  left: 204px;
+}
+.man #right-eye {
+  left: 259px;
+}
+.man #left-pupil,
+.man #right-pupil {
+  width: 8px;
+  height: 8px;
+  background: #FFF;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+/* JUST BUTTON STYLES */
+.button {
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  margin-left: -120px;
+  color: #FFF;
+  display: inline-block;
+  width: 240px;
+  line-height: 70px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s linear;
+}
+.button:hover {
+  background: #FFF;
+  color: #EA7192;
+}
+.button:hover span {
+  border-color: #EA7192;
+}
+.button span {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border: 1px solid #FFF;
+  transition: all .3s linear;
+}
+.button span:nth-child(1) {
+  bottom: 5px;
+  right: 5px;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+.button span:nth-child(2) {
+  bottom: 5px;
+  left: 5px;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+.button span:nth-child(3) {
+  top: 5px;
+  left: 5px;
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+.button span:nth-child(4) {
+  top: 5px;
+  right: 5px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+/* 
+Background is in base64 format so to make code more readable I just moved it here.
+*/
+.man {
+  background-image: url("../images/eyeman.jpg");
+}
+
+a {
+	color: rgba(0,0,0,0.25);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: rgba(0,0,0,0.6);
+}
+
+.fresheye-header {
+	margin: 0 auto;
+	padding: 3em 0em;
+	text-align: center;
+	color: rgba(0,0,0,0.35);
+}
+
+.fresheye-header h1 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 2.5em;
+	line-height: 0.8;
+}
+
+.fresheye-header h1 span {
+	display: block;
+	padding: 0 0 0.6em 0.1em;
+	font-size: 0.6em;
+	opacity: 0.7;
+}
+
+/* To Navigation Style */
+.fresheye-top {
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.fresheye-top a {
+	display: inline-block;
+	padding: 0 1em;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.fresheye-top span.right {
+	float: right;
+}
+
+.fresheye-top span.right a {
+	display: block;
+	float: left;
+}
+
+.fresheye-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'fresheyeicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.fresheye-icon-drop:before {
+	content: "\e001";
+}
+
+.fresheye-icon-prev:before {
+	content: "\e004";
+}
+
+section {
+	padding: 2em 2em 2em;
+	background: #E66A8C;
+	text-align: center;
+}
+
+section.related {
+	padding: 3em 1em 4em;
+	background: #465650;
+	color: rgba(0,0,0,0.4);
+	font-size: 1.5em;
+}
+
+.related > a {
+	max-width: 80%;
+	border: 2px solid rgba(0,0,0,0.3);
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+	-webkit-transition: color 0.3s, border-color 0.3s;
+	transition: color 0.3s, border-color 0.3s;
+}
+
+.related a:hover {
+	border-color: rgba(0,0,0,0.6);
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.4;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	font-weight: 400;
+	font-size: 0.75em;
+	text-align: left;
+}
+.next{
+	bottom: 2.8em !important;
+}
+@media screen and (max-width: 44.75em) {
+	section { padding: 1em 2em; }
+}
+
+@media screen and (max-width: 25em) {
+	.fresheye-header { font-size: 0.8em; }
+	section.related { font-size: 1.2em; }
+	.fresheye-icon span { display: none; }
+}
