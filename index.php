@@ -89,7 +89,7 @@
 					AJAX request (maybe show loading indicator while we don't have an answer..)
 					*/
 					$.ajax({
-					    url: 'http://fresheye.in/',
+					    url: 'http://fresheye.in/sendmail.php',
 					    type: 'POST',
 					    data : formData,
 					    async: false,
@@ -100,7 +100,7 @@
 					    },
 					    success: function(msg){ 
 					    	console.log("success");
-					        console.log(msg);
+					        //console.log(msg);
 					    }
 					});
 
