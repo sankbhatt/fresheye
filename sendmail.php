@@ -15,7 +15,7 @@ $mail->setFrom('sanket@practicenext.com', 'Sanket Bhatt');     //Set who the mes
 $mail->addReplyTo('sanket@practicenext.com', 'Sanket Bhatt');  //Set an alternative reply-to address
 $mail->addAddress($_POST['emailid'], $_POST['fullname']);  // Add a recipient
 //$mail->addCC('cc@example.com');
-$mail->addBCC('bcc@example.com');
+$mail->addBCC('sanket@practicenext.com');
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 //$mail->addAttachment('/usr/labnol/file.doc');         // Add attachments
 //$mail->addAttachment('/images/image.jpg', 'new.jpg'); // Optional name
