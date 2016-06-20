@@ -138,8 +138,15 @@
 
 		//create eyes
 		var eye1 = new DrawEye("#left-eye",  "#left-pupil", 8, 30);
-		var eye2 = new DrawEye("#right-eye", "#right-pupil", 8, 30);  
-		//# sourceURL=pen.js
+		var eye2 = new DrawEye("#right-eye", "#right-pupil", 8, 30);
+
+		//* code to change title of page */
+
+		window.onblur = function () { document.title = "Ohh no, you are going away :'("; }
+
+		window.onfocus = function () { document.title = "Yay!! you came back :D  "; }
+
+
 		</script>
 
 	</body>

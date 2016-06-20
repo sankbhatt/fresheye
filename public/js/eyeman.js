@@ -29,3 +29,5 @@ var DrawEye = function(eyecontainer, eyepupil, speed, interval) {
 //create eyes
 var eye1 = new DrawEye("#left-eye", "#left-pupil", 8, 30);
 var eye2 = new DrawEye("#right-eye", "#right-pupil", 8, 30);
+
+
