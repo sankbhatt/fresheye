@@ -63,6 +63,9 @@
 					<span class="final-message"></span>
 				</form><!-- /simform -->			
 			</section>
+			<section>
+				<p>no animals have been harmed while making this site</p>
+			</section>
 		</div><!-- /container -->
 
 		
