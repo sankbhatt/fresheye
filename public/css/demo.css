@@ -59,8 +59,8 @@ body{
 }
 .man #left-pupil,
 .man #right-pupil {
-  width: 8px;
-  height: 8px;
+  width: 14px;
+  height: 14px;
   background: #FFF;
   border-radius: 50%;
   display: block;
