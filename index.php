@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="public/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="public/css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="public/css/component.css" />
-		<script src="public/js/modernizr.custom.js"></script>	
+		<script src="public/js/modernizr.custom.js"></script>
 	</head>
 	<body>
 		<div class="container">
